@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+        <div class="head">
+            <h1 class="about">Products</h1>
+        </div>
+    <article>
+        <div class="sectionOne">
+            <div class="sectionOneImage">
+                <img src="pics.jpg" alt="Italian Trulli">
+            </div>
+            <div class="sectionOneSub">
+                <div class="sectionTextOne">
+                    <h1 class="topic">OPENING TIMES</h1>
+                    <ul>
+                        <li>Monday – Saturday: 08:00 AM to 8:00 PM</li>
+                        <li>Sunday: 10:00 AM to 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="sectionTextOne">
+                    <h1 class="topic">CONTACT US</h1>
+                    <ul>
+                        <li>Address: Unit 6, Jaxon’s Court, Hallgate, Wigan, WN1 1LR</li>
+                        <li>Telephone: +44 7951 816502, +44 7862 425760</li>
+                        <li>Email: info@peerlessstores.co.uk</li>
+                        <li>Social Media Handles: [Include social media links or icons]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>JOIN US / REGISTER</h2>
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number with country code" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your home address" required>
+                </div>
+        
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </article>
+    <div id="footer-placeholder"></div>
+</body>
+<script>
+    document.getElementById('header-placeholder').innerHTML = '<object type="text/html" data="../header.html" ></object>';
+    document.getElementById('footer-placeholder').innerHTML = '<object type="text/html" data="../footer.html" ></object>';
+  </script>
+</html>
