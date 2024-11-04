@@ -7,11 +7,10 @@
     <title>About</title>
 </head>
 <body>
-    <header>
+    <div id="header-placeholder"></div>
         <div class="head">
             <h1 class="about">About Us</h1>
         </div>
-    </header>
     <article>
         <div class="article">
             <div class="image">
@@ -22,5 +21,10 @@
             </div>
         </div>
     </article>
+    <div id="footer-placeholder"></div>
 </body>
+<script>
+    document.getElementById('header-placeholder').innerHTML = '<object type="text/html" data="../header.html" ></object>';
+    document.getElementById('footer-placeholder').innerHTML = '<object type="text/html" data="../footer.html" ></object>';
+  </script>
 </html>
