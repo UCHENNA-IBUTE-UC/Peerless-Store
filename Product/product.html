@@ -18,11 +18,11 @@
                         <ol>
                            <div class="grid-container">
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="super.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>GROCERIES
+                                    <li class="group-topic">GROCERIES
                                         <ul>
                                             <li>Beverages</li>
                                             <li>Baby Food & Care</li>
@@ -38,11 +38,11 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="hair-care.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>BEAUTY, HEALTH & WELLBEING 
+                                    <li class="group-topic">BEAUTY, HEALTH & WELLBEING 
                                         <ul>
                                             <li>Hair & Hair Care</li>
                                             <li>Face & Skincare</li>
@@ -55,11 +55,11 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="fruit.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>FRUIT & VEGETABLES
+                                    <li class="group-topic">FRUIT & VEGETABLES
                                         <ul>
                                             <li>Fresh & Dried Fruits</li>
                                             <li>Fresh Tomatoes & Peppers</li>
@@ -70,11 +70,11 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="fish.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>MEAT, FISH & POULTRY
+                                    <li class="group-topic">MEAT, FISH & POULTRY
                                         <ul>
                                             <li>Frozen Fish</li>
                                             <li>Frozen Beef, Lamb & Goat</li>
@@ -86,11 +86,11 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="ingredients.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>ETHNIC FOOD
+                                    <li class="group-topic">ETHNIC FOOD
                                         <ul>
                                             <li>Flours</li>
                                             <li>Rice, Beans, Noodles & Pasta</li>
@@ -104,11 +104,11 @@
                                 </div>
                             </div>
                             <div class="grid-item">
-                                <div class="">
-                                    <img src="pics.jpg" alt="Italian Trulli">
+                                <div class="image-wrapper">
+                                    <img src="apparel.jpg" alt="Italian Trulli">
                                 </div>
                                 <div class="">
-                                    <li>FASHION & LIFESTYLE
+                                    <li class="group-topic">FASHION & LIFESTYLE
                                         <ul>
                                             <li>Jewellery</li>
                                             <li>Jewellery</li>
@@ -131,12 +131,12 @@
                         <div class="line"></div>
                         <h3>How to Place an Order Over the Phone</h3>
                         <ol>
-                            <li>Contact Our Telesales Team</li>
+                            <li class="space">Contact Our Telesales Team</li>
                             <ul>
-                                <li>Call us at [Phone Number] to speak with a telesales representative. Our team is available from [Business Hours and Days] to assist you.</li>
-                                <li>Alternatively, you can email us at [Email Address] with any questions, and we’ll respond promptly.</li>
+                                <li>Call us at +44 7951 816502, +44 7862 425760 to speak with a telesales representative. Our team is available from Monday – Saturday: 08:00 AM to 8:00 PM, Sunday: 10:00 AM to 5:00 PM to assist you.</li>
+                                <li>Alternatively, you can email us at info@peerlessstores.co.uk with any questions, and we’ll respond promptly.</li>
                             </ul>
-                            <li>Steps for Ordering</li>
+                            <li class="space">Steps for Ordering</li>
                             <ul>
                                 <li>Provide Order Details: Please have the product name(s) or code(s) ready so we can accurately process your order.</li>
                                 <li>Customer Information: We’ll ask for your full name, phone number, and shipping address to ensure smooth delivery.</li>
@@ -149,20 +149,32 @@
                                     <li>Order Confirmation: Once your payment is processed, we’ll send you a confirmation email with your order details, estimated delivery date, and tracking information.</li>
                                 </li>
                             </ul>
-                            <li>Additional Telesales Support:</li>
+                            <li class="space">Additional Telesales Support:</li>
                             <ul>
                                 <li>Our telesales team is here to assist with product recommendations, promotions, and any questions you may have about the ordering process.</li>
-                                <li>You can reach us at [Support Number] or via email at [Email Address] if you need further assistance.</li>
+                                <li>You can reach us at +44 7951 816502, +44 7862 425760 or via email at info@peerlessstores.co.uk if you need further assistance.</li>
                             </ul>
                         </ol>
-                        <p>Thank you for choosing [Company Name]. We look forward to helping you complete your order and ensuring a great experience with our products!</p>
+                        <p>Thank you for choosing Peerless Store. We look forward to helping you complete your order and ensuring a great experience with our products!</p>
                         
                         <p>Warm regards,</p>
                         <p>[Your Name]</p>
-                        <p>[Company Name] Telesales and Customer Support</p>
-                        <p>[Phone Number] | [Email Address]</p>
+                        <p>Peerless Store Telesales and Customer Support</p>
+                        <p>+44 7951 816502, +44 7862 425760 | info@peerlessstores.co.uk</p>
                     </div>
                 </div>
             </article>
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+    const orderButton = document.querySelector(".order-btn");
+    const hiddenSection = document.querySelector(".hiddenSection");
+
+    orderButton.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default link behavior
+        hiddenSection.style.display = hiddenSection.style.display === "none" ? "block" : "none";
+    });
+});
+
+            </script>
             
 </html>
