@@ -70,6 +70,22 @@ img {
     object-fit: cover; /* Ensures image scales without distortion */
 }
 
+img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+}
+
+/* Hover effect for images */
+.grid-item:hover img {
+    transform: scale(1.1); /* Scale up the image by 10% */
+}
+
+/* Optional: Add a subtle box-shadow on hover for better effect */
+.grid-item:hover img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Content styling */
 .group-topic {
     font-weight: bold;
