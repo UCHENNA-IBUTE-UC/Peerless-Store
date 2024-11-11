@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
 }
+
 .head {
     background-image: url("store.jpg");
   background-color: #cccccc;
@@ -16,6 +17,7 @@ body {
   background-size: cover; 
   position: relative;
 }
+
 .about {
     position: absolute;
     top: 40%;
@@ -24,6 +26,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
 }
+
 article {
     display: flex;
     flex-direction: column;
@@ -31,6 +34,7 @@ article {
     justify-content: center;
     margin-top: 10rem;
 }
+
 .sectionOne {
     display: flex;
     flex-wrap: wrap;
@@ -40,21 +44,25 @@ article {
     justify-content: center;
     max-width: 1000px;
 }
+
 .sectionOneImage img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
+
 .sectionOneImage,
 .sectionOneSub {
-    flex: 1 1 100%; /* Default to full width */
+    flex: 1 1 100%; 
 }
+
 .sectionOneSub {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 50px;
 }
+
 .sectionTextOne ul {
     list-style-type: none;
     padding: 0;
@@ -64,15 +72,17 @@ article {
     margin-bottom: 5px;
     font-size: 16px;
 }
+
 .topic {
     font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
+
 @media (min-width: 768px) {
     .sectionOneImage,
     .sectionOneSub {
-        flex: 1; /* Side-by-side layout for larger screens */
+        flex: 1; 
     }
 
     .topic {
@@ -93,6 +103,13 @@ article {
         font-size: 22px;
     }
 }
+
+.map img {
+    width: 1000px;
+    height: auto;
+    margin: 3rem 0;
+}
+
 .form-container {
     width: 60%;
     padding: 2rem;
@@ -102,21 +119,25 @@ article {
     margin-top: 4rem;
     margin-bottom: 5rem;
 }
+
 h2 {
     margin-bottom: 1.5rem;
     color: #333;
     text-align: center;
 }
+
 .intoTwo {
     display: flex;
     width: 100%;
 }
+
 label {
     display: block;
     margin-top: 1rem;
     font-weight: bold;
     color: #555;
 }
+
 input {
     width: 100%;
     padding: 0.5rem;
@@ -124,6 +145,7 @@ input {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 .submit-btn {
     margin-top: 1.5rem;
     padding: 0.75rem;
@@ -137,9 +159,9 @@ input {
 }
 
 .submit-btn:hover {
-    background-color: #a55608; /* Slightly lighter shade on hover */
+    background-color: #a55608; 
     color: #fff;
-    transform: scale(1.05); /* Slightly enlarges the button on hover */
+    transform: scale(1.05); 
 }
 
 .submit-btn:disabled {

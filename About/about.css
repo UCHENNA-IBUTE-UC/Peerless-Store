@@ -1,5 +1,3 @@
-/* Basic reset */
-
 body {
     margin: 0;
 }
@@ -50,7 +48,7 @@ h2 {
     padding-top: 10px;
 }
 
-p {
+.introduction p {
     font-size: 1rem;
     color: #555;
     margin-top: 0.5rem;
@@ -78,29 +76,27 @@ a:hover {
 article {
     margin-top: 15%;
 }
-/* General styling for .article container */
+
 .article {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap; 
     gap: 20px;
     padding: 20px;
     max-width: 1200px;
     margin: auto;
   }
   
-  /* Styling for the image container */
   .article .image {
     flex: 1;
     max-width: 50%;
   }
   
   .article .image img {
-    width: 100%; /* Make the image responsive */
+    width: 100%; 
     height: auto;
     border-radius: 8px;
   }
   
-  /* Styling for the text container */
   .article .text {
     flex: 1;
     max-width: 50%;
@@ -116,15 +112,13 @@ article {
     font-size: 16px;
   }
   
-  /* Responsive styles */
   @media (max-width: 768px) {
-    /* Stack image and text vertically on small screens */
     .article {
       flex-direction: column;
     }
   
     .article .image, .article .text {
-      max-width: 100%; /* Full width for both image and text */
+      max-width: 100%; 
     }
   
     .article .products-services h2 {

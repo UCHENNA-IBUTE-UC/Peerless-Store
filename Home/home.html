@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="../header.css">
+    </head>
+    <body>
+        <header>
+            <div class="head header-1">
+                <header class="fixed-header heading">
+                    <div class="container">
+                      <nav class="nav-links">
+                        <a href="/Home/home.html">Home</a>
+                        <a href="/About/about.html">About us</a>
+                        <div class="dropdown">
+                            <a href="#services" class="dropdown-toggle">Services</a>
+                            <div class="dropdown-menu">
+                              <a href="/Service/distribution.html">Distribution</a>
+                              <a href="/Service/wholesale.html">Wholesale</a>
+                            </div>
+                        </div>
+                        <a href="/Product/product.html">Products</a>
+                        <a href="/Contact/contact.html">Contact us</a>
+                      </nav>
+                    </div>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                    <div class="right-sec">
+                        <p>UK: 07951816502 | E-mail: info@peerlessstores.co.uk</p>
+                    </div>
+                    <div class="logo">
+                        <img src="/Logo.png" alt="Brand Logo">
+                    </div>
+                </header>
+                <div class="banner show-message">
+                    <h1>For the Love <br> of Native Food</h1>
+                    <p class="para">Retailer of native food and drinks in the United Kingdom</p>
+                </div>
+            </div>
+        </header>
+        <main class="section-1">
+            <div>
+                <img src="BrandLogo.jpg" alt="brand-logo" class="brand-logo">
+            </div>
+            <div class="content">
+                <h1>Peerless Stores Ltd</h1>
+                <p>Registered as Peerless Stores Limited, trading as Peerless Stores since 2024, based in Wigan Manchester. <br> We specialize in selling and distributing ethnic foods and products</p>
+                <button>READ MORE</button>
+            </div>
+        </main>
+        <main class="section-2">
+            <div class="service">
+                <h1>Services</h1>
+                <p>We specialize in selling and distributing ethnic foods and products</p>
+            </div>
+            <div class="offers">
+                <a href="distribution.html">
+                    <div class="offer-card show-offer-card">
+                        <h1>Distribution</h1>
+                        <p>We supply to local retail shops, ethnic resturants, and large households throughout the Uk</p>
+                        <p>Please call us on <a href="tel:07951816502" style="color: rgb(226, 124, 7);">07951816502</a> or email us at <a href="mailto:info@peerlessstores.co.uk" style="color: rgb(226, 124, 7);">info@peerlessstores.co.uk</a> </p>
+                        <img src="rb_316.png" alt="fruits & vegeies">
+                    </div>
+                </a>
+                <a href="wholesale.html">
+                    <div class="offer-card show-offer-card">
+                        <h1>Wholesale Shop</h1>
+                        <p>We run wholesale services with our partners via warehouse distribution and are open to public at wholesale prices</p>
+                        <p style="color: rgb(226, 124, 7);">We open at:</p>
+                        <ul style="color: rgb(226, 124, 7);">
+                            <li>Monday – Saturday: <time datetime="08:00">08:00 am</time> to <time datetime="20:00">8:00 pm</time></li>
+                            <li>Sunday: <time datetime="10:00">10:00 am</time> to <time datetime="17:00">5:00 pm</time></li>
+                        </ul>
+                        <img src="mixed-fruits.png" alt="fruits">
+                    </div>
+                </a>
+                <a href="/Product/product.html">
+                    <div class="offer-card show-offer-card">
+                        <h1>Products</h1>
+                        <p>Please check our <a href="/Product/product.html" style="color: rgb(226, 124, 7);">products page</a> for more</p>
+                        <img src="994210d2-456c-4d3c-b4e4-730542dc1d32.png" alt="meat">
+                    </div>
+                </a>
+                <a href="/Contact/contact.html">
+                    <div class="offer-card show-offer-card">
+                        <h1>Contact us</h1>
+                        <p><strong>Address:</strong> Unit 6, Jaxon’s Court, Hallgate, Wigan, WN1 1LR</p>
+                        <p><strong>Telephone:</strong>
+                            <a href="tel:+447951816502" style="color: rgb(226, 124, 7);">+44 7951 816502</a>,
+                            <a href="tel:+447862425760" style="color: rgb(226, 124, 7);">+44 7862 425760</a>
+                        </p>
+                        <p><strong>Email:</strong>
+                            <a href="mailto:info@peerlessstores.co.uk" style="color: rgb(226, 124, 7);">info@peerlessstores.co.uk</a>
+                        </p>
+                        <img src="still-life-with-uncooked-seafoods.png" alt="sea food">
+                    </div>
+                </a>
+            </div>
+            <button class="footer-button"><a href="about.html">READ MORE</a></button>
+        </main>
+        <footer class="footer">
+            <div class="container">
+              <p>&copy; 2024 Peerless-Stores Website.</p>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+                  const navLinks = document.querySelector('.nav-links');
+                  navLinks.classList.toggle('show');
+                }
+        </script>
+    </body>
+</html>

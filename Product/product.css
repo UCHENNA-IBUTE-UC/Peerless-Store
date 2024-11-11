@@ -1,15 +1,17 @@
 body {
     margin: 0;
 }
+
 .head {
-    background-image: url("supermarket.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 500px; /* You must set a specified height */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("supermarket.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: aliceblue;
   position: relative;
 }
+
 .about {
     position: absolute;
     top: 40%;
@@ -17,12 +19,14 @@ body {
     font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 .hidden {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 article {
     display: flex;
     flex-direction: column;
@@ -34,6 +38,7 @@ article {
 .topic {
     font-size: 50px;
 }
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,41 +57,40 @@ article {
     flex-direction: column;
     gap: 40px;
 }
+
 img {
     width: 100%;
     height: auto;
 }
+
 .image-wrapper {
     width: 100%;
-    max-width: 400px; /* Maximum width for images */
-    height: 200px;    /* Set height for uniform appearance */
+    max-width: 400px; 
+    height: 200px;    
     overflow: hidden;
-    border-radius: 8px; /* Optional: add rounded corners */
+    border-radius: 8px; 
 }
 
 .image-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures image scales without distortion */
+    object-fit: cover; 
 }
 
 img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for scaling */
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Hover effect for images */
 .grid-item:hover img {
-    transform: scale(1.1); /* Scale up the image by 10% */
+    transform: scale(1.1); 
 }
 
-/* Optional: Add a subtle box-shadow on hover for better effect */
 .grid-item:hover img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Content styling */
 .group-topic {
     font-weight: bold;
     margin-top: 10px;
@@ -103,33 +107,39 @@ img {
     font-size: 0.9em;
     margin-top: 5px;
 }
+
 .order-btn {
     border: 2px solid black;
     padding: 20px 50px;
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
 .order-btn-btn {
     text-align: center;
     text-decoration: none;
     color: #000;
 }
+
 .hiddenSection {
-    width: 100%;         /* Adjust width as needed */
-    max-width: 700px;    /* Optional: limit the element width */
+    width: 100%;       
+    max-width: 700px;  
     display: none;
 }
+
 .hidden-paragraph {
     margin-bottom: 50px;
 }
+
 .line {
     border-bottom: 1px solid black;
-
 }
+
 .space {
     margin-bottom: .5rem;
     margin-top: 1rem;
 }
+
 .sectionTextOne ul {
     list-style-type: none;
     padding: 0;
@@ -139,7 +149,8 @@ img {
     margin-bottom: 5px;
     font-size: 16px;
 }
-@media (max-width: 768px) {
+
+@media (max-width: 1268px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -153,7 +164,7 @@ img {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 880px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
@@ -163,5 +174,11 @@ img {
 
     .group-topic {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: 220px;
     }
 }
