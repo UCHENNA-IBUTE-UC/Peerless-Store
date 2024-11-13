@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.head {
+    background-image: url("../images/store.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat; 
+  background-size: cover; 
+ 
+}
+
+.about {
+    padding-top: 10rem;
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.sectionOne {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.sectionOneImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.sectionOneImage,
+.sectionOneSub {
+    flex: 1 1 100%; 
+}
+
+.sectionOneSub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.sectionTextOne ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sectionTextOne ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.topic {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.map img{
+    width: 100vw;
+    height: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.form-container {
+    width: 90vw;
+}
+
+@media (min-width: 768px) {
+    .sectionOneImage,
+    .sectionOneSub {
+        flex: 1; 
+    }
+
+    .topic {
+        font-size: 28px;
+    }
+
+    .sectionTextOne ul li {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .sectionTextOne ul li {
+        font-size: 14px;
+    }
+
+    .topic {
+        font-size: 22px;
+    }
+}
+
+
+.form-container {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+}
+
+.intoTwo {
+    display: flex;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    margin-top: 1.5rem;
+    padding: 0.75rem;
+    background-color: #7a4202;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #a55608; 
+    color: #fff;
+    transform: scale(1.05); 
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+
+
+
+
+

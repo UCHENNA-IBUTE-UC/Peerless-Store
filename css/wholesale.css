@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .head {
+    background-image: url(../images/top-view-fresh-vegetable-composition-with-seasonings\ \(1\).jpg);
+    border-radius: 0 0 0 90rem;
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    position: relative;
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .head h1 {
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 6rem;
+    font-family: "Great Vibes", cursive;
+    color: aliceblue;
+    text-shadow: 1rem 1rem 0.8rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .base-img {
+    width: 20rem;
+    height: 25rem;
+    object-fit: cover;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .show-image {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 8rem;
+    text-align: justify;
+  }
+  
+  .container p {
+    padding-bottom: 2rem;
+    text-align: justify;
+  }
+  
+  .content {
+   padding: 3rem;
+  }
+  
+  .content ul {
+    list-style-type: none;
+  }
+  
+  
+  @media (max-width: 100rem) {
+    .head {
+      height: 60vh;
+    }
+  
+    .container {
+      padding: 2rem 5rem;
+      gap: 2rem;
+    }
+  
+    .base-img {
+      width: 18rem;
+      height: 22rem;
+    }
+    .content {
+      padding-top: 2;
+    }
+  } 
+  
+  @media (max-width: 65rem) {
+    .head {
+      height: 50vh;
+    }
+  
+    .head h1 {
+      font-size: 5.5rem;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+    }
+  
+    .base-img {
+      width: 20rem;
+      height: 25rem;
+    }
+  
+    .content {
+      padding: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 60rem) {
+    .head {
+      height: 50vh;
+    }
+  
+    .head h1 {
+      font-size: 3.5rem;
+      padding-top: 10rem;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem 2rem;
+    }
+  
+    .base-img {
+      width: 18rem;
+      height: 20rem;
+    }
+  
+    .content {
+      padding: 0.5rem;
+    }
+  } 
+  
+  @media (max-width: 30rem) {
+    .head {
+      height: 40vh;
+    }
+  
+    .head h1 {
+      font-size: 2rem;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem 1rem;
+    }
+  
+    .base-img {
+      width: 10rem;
+      height: 15rem;
+    }
+  
+    .content {
+      padding: 0.1rem;
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 20rem) {
+    .head {
+      height: 30vh;
+    }
+  
+    .head h1 {
+      padding-top: 5rem;
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem 1rem;
+    }
+  
+    .base-img {
+      width: 8rem;
+      height: 10rem;
+    }
+  
+    .content {
+      padding: 0.1rem;
+      font-size: 0.7rem;
+    }
+  }

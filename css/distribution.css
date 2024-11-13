@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .head {
+    background-image: url(../images/indoors-4001482_1280.jpg);
+    height: 70vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    border-radius: 0  20rem 0 20rem;
+    box-shadow: 0.5rem 1rem 3rem rgba(250, 62, 62, 0.5);
+  }
+  
+  .head h1 {
+    padding-top: 10rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 6rem;
+    text-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  }
+
+  
+  .section-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    gap: 5rem;
+    border-bottom: 0.2rem dotted darkolivegreen;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  #delivery-bike, #delivery-man {
+    width: 40rem;
+  }
+  
+  .brand-logo {
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    width: 30rem;
+  }
+  
+  .show-logo {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(-5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .section-2 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 3rem;
+    gap: 3rem;
+  }
+  
+  .section-2 h1 {
+    font-size: 5rem;
+    text-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+    padding-bottom: 1rem;
+  }
+  
+  
+  @media (max-width: 75rem) {
+    .head {
+      height: 70vh;
+    }
+    .head h1 {
+      padding-top: 10rem;
+      font-size: 5rem;
+    }
+  
+    .section-1, .section-2 {
+      display: block;
+      text-align: center;
+    }
+  
+    .section-1 .content {
+      padding-top: 5rem;
+    }
+    .section-2 h1 {
+      font-size: 3rem;
+    }
+  
+  }
+  
+  @media (max-width: 50rem) {
+    .head {
+      height: 40vh;
+    }
+    .head h1 {
+      font-size: 3rem;
+      padding-top: 7rem;
+    }
+  
+    .brand-logo {
+      width: 25rem;
+    }
+  
+    #delivery-bike, #delivery-man {
+      width: 25rem;
+    }
+  
+    .section-2 h1 {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 40rem) {
+    .head {
+      height: 40vh;
+      width: 100%;
+    }
+  
+    .head h1 {
+      font-size: 2.5rem;
+    }
+  
+    .brand-logo {
+      width: 15rem;
+    }
+  
+    #delivery-bike, #delivery-man {
+      width: 15rem;
+    }
+  
+    .section-2 h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 20rem) {
+    .head h1 {
+      font-size: 2rem;
+    }
+    .section-2 h1, header h1 {
+      font-size: 2rem;
+    }
+  
+    .brand-logo, #delivery-bike, #delivery-man{
+      width: 10rem;
+    }
+  }

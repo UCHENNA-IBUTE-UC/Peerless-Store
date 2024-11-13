@@ -1,0 +1,158 @@
+body {
+    margin: 0;
+}
+
+.about {
+    text-align: center;
+    padding-top: 10rem;
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+.about-section {
+    max-width: 65rem;
+    margin: 3rem auto;
+    padding: 5rem 2rem;
+    background-color: #fff;
+    border-radius: 0.2rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+.introduction {
+    font-size: 10rem;
+    color: #444;
+    margin-bottom: 2rem;
+    text-align: center;
+    line-height: 1.8;
+    padding: 2rem 2.5rem;
+    border-left: 4px solid #007bff;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+}
+
+.vision-mission,
+.company-info,
+.background,
+.products-services {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5rem;
+    border-bottom: 0.1rem solid #32cc6d;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.introduction p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.head {
+    background-image: url(../images/fruit.jpg); 
+  background-color: #cccccc; 
+  height: 80vh; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
+
+article {
+    margin-top: 15%;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 120rem;
+    margin: auto;
+  }
+  
+  .article .image {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .article .image img {
+    width: 100%; 
+    height: auto;
+    border-radius: 1.5rem;
+  }
+  
+  .article .text {
+    padding: 2rem;
+    flex: 1;
+    max-width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .article .products-services h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .article .products-services p {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  
+  @media (max-width: 70rem) {
+    .about {
+      font-size: 3rem;
+    }
+    .about-section {
+      margin: 0;
+    }
+    .article {
+      flex-direction: column;
+    }
+  
+    .article .image, .article .text {
+      max-width: 100%; 
+    }
+  
+    .article .products-services h2 {
+      font-size: 1.8rem;
+    }
+  
+    .article .products-services p {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 40rem) {
+    .introduction {
+      padding: 1.5rem;
+    }
+    .article .products-services h2 {
+      font-size: 1.5rem;
+    }
+  
+    .article .products-services p {
+      font-size: 1rem;
+    }
+    .article {
+      padding: 0;
+
+    }
+    .article .text {
+      padding: 0;
+    }
+  }
+  

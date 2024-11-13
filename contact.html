@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <div class="head">
+        <header class="fixed-header heading">
+            <div class="left-header">
+                <div class="container">
+                    <nav class="nav-links">
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About us</a>
+                        <div class="dropdown">
+                            <a href="#services" class="dropdown-toggle">Services</a>
+                            <div class="dropdown-menu">
+                              <a href="distribution.html">Distribution</a>
+                              <a href="wholesale.html">Wholesale</a>
+                            </div>
+                        </div>
+                        <a href="product.html">Products</a>
+                        <a href="contact.html">Contact us</a>
+                    </nav>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        &#9776;
+                    </div>
+                </div>
+            </div>
+            
+            <div class="right-header">
+                <div class="right-sec">
+                    <p>UK: 07951816502 | E-mail: info@peerlessstores.co.uk</p>
+                </div>
+                <div>
+                    <img src="images/Company Logo-Photoroom.png" alt="Brand Logo" class="logo">
+                </div>
+            </div>
+        </header>
+        <h1 class="about">Contact Us</h1>
+    </div>
+    
+    <article>
+        <div class="sectionOne">
+            <div class="sectionOneSub">
+                <div class="sectionTextOne">
+                    <h1 class="topic">OPENING TIMES</h1>
+                    <ul>
+                        <li>Monday – Saturday: 08:00 AM to 8:00 PM</li>
+                        <li>Sunday: 10:00 AM to 5:00 PM</li>
+                    </ul>
+                </div>
+                <div class="sectionTextOne">
+                    <h1 class="topic">CONTACT US</h1>
+                    <ul>
+                        <li>Address: Unit 6, Jaxon’s Court, Hallgate, Wigan, WN1 1LR</li>
+                        <li>Telephone: +44 7951 816502, +44 7862 425760</li>
+                        <li>Email: info@peerlessstores.co.uk</li>
+                        <li>Social Media Handles: peerlessstores</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sectionOneImage">
+                <img src="images/bakery.jpg" alt="Shop Picture">
+            </div>
+        </div>
+        <div class="map">
+            <img src="images/download.jfif" alt="Location">
+        </div>
+        <div class="form-container">
+            <h2>JOIN US / REGISTER</h2>
+            <form action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required>
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required>
+                    </div>
+                </div>
+        
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Your phone number with country code" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Your home address" required>
+                </div>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="container">
+          <p>&copy; 2024 Peerless-Stores Website. </p>
+        </div>
+      </footer>
+      
+</body>
+<script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+</script>
+    
+</html>
