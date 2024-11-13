@@ -1,21 +1,20 @@
-body {
+* {
     margin: 0;
+    padding: 0;
 }
 
 .head {
-  background-image: url("supermarket.jpg");
+  background-image: url("../images/supermarket.jpg");
   background-color: #cccccc;
   height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
   color: aliceblue;
-  position: relative;
 }
 
 .about {
-    position: absolute;
-    top: 40%;
-    right: 40%;
+    text-align: center;
+    padding-top: 15rem;
     font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -113,6 +112,11 @@ img {
     padding: 20px 50px;
     margin-top: 50px;
     margin-bottom: 30px;
+    background-color: #7a4202;
+}
+
+.order-btn:hover {
+    background-color: #a55608;
 }
 
 .order-btn-btn {
@@ -180,5 +184,19 @@ img {
 @media (max-width: 480px) {
     .grid-item {
         width: 220px;
+    }
+}
+
+@media (max-width: 30rem) {
+    
+    .grid-item {
+        width: 10rem;
+        padding: 1rem;
+    }
+
+    ol {
+        margin-left: 0;
+        padding-left: 0;
+        
     }
 }

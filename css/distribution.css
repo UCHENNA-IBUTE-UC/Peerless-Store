@@ -4,22 +4,18 @@
   }
   
   .head {
-    background-image: url(indoors-4001482_1280.jpg);
+    background-image: url(../images/indoors-4001482_1280.jpg);
     height: 70vh;
     width: 100%;
     background-position: center;
     background-repeat: no-repeat; 
     background-size: cover; 
-    position: relative;
     border-radius: 0  20rem 0 20rem;
     box-shadow: 0.5rem 1rem 3rem rgba(250, 62, 62, 0.5);
   }
   
-  header h1 {
-    position: absolute;
-    top: 45%;
-    right: 30%;
-    font-size: 70px;
+  .head h1 {
+    padding-top: 10rem;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
     text-align: center;
@@ -47,7 +43,7 @@
     width: 40rem;
   }
   
-  .logos {
+  .brand-logo {
     box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
@@ -91,8 +87,8 @@
     .head {
       height: 70vh;
     }
-    header h1 {
-      padding-top: 15rem;
+    .head h1 {
+      padding-top: 10rem;
       font-size: 5rem;
     }
   
@@ -112,14 +108,14 @@
   
   @media (max-width: 50rem) {
     .head {
-      height: 30vh;
+      height: 40vh;
     }
-    header h1 {
+    .head h1 {
       font-size: 3rem;
-      padding-top: 3rem;
+      padding-top: 7rem;
     }
   
-    .logo {
+    .brand-logo {
       width: 25rem;
     }
   
@@ -134,15 +130,15 @@
   
   @media (max-width: 40rem) {
     .head {
-      height: 20vh;
+      height: 40vh;
       width: 100%;
     }
   
-    header h1 {
+    .head h1 {
       font-size: 2.5rem;
     }
   
-    .logo {
+    .brand-logo {
       width: 15rem;
     }
   
@@ -156,11 +152,14 @@
   }
   
   @media (max-width: 20rem) {
+    .head h1 {
+      font-size: 2rem;
+    }
     .section-2 h1, header h1 {
       font-size: 2rem;
     }
   
-    .logo, #delivery-bike, #delivery-man{
+    .brand-logo, #delivery-bike, #delivery-man{
       width: 10rem;
     }
   }

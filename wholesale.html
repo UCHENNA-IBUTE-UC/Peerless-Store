@@ -4,45 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wholesale Shop</title>
-  <link rel="stylesheet" href="wholesale.css">
-  <link rel="stylesheet" href="../header.css">
+  <link rel="stylesheet" href="css/wholesale.css">
+  <link rel="stylesheet" href="css/header.css">
 </head>
 <body>
-    <header>
-        <div class="head">
-            <header class="fixed-header heading">
-                <div class="container">
-                    <nav class="nav-links">
-                        <a href="/Home/home.html">Home</a>
-                        <a href="/About/about.html">About us</a>
-                        <div class="dropdown">
-                            <a href="#services" class="dropdown-toggle">Services</a>
-                            <div class="dropdown-menu">
-                              <a href="/Service/distribution.html">Distribution</a>
-                              <a href="/Service/wholesale.html">Wholesale</a>
-                            </div>
-                        </div>
-                        <a href="/Product/product.html">Products</a>
-                        <a href="/Contact/contact.html">Contact us</a>
-                      </nav>
-                </div>
-                <div class="hamburger" onclick="toggleMenu()">
-                    &#9776;
-                </div>
-                <div class="right-sec">
-                    <p>UK: 07951816502 | E-mail: info@peerlessstores.co.uk</p>
-                </div>
-                <div class="logo">
-                    <img src="/Logo.png" alt="Brand Logo">
-                </div>
-              </header>
-              <h1>WHOLESALE</h1>
+  <div class="head">
+    <header class="fixed-header heading">
+      <div class="left-header">
+        <div class="container">
+          <nav class="nav-links">
+              <a href="home.html">Home</a>
+              <a href="about.html">About us</a>
+              <div class="dropdown">
+                  <a href="#services" class="dropdown-toggle">Services</a>
+                  <div class="dropdown-menu">
+                    <a href="distribution.html">Distribution</a>
+                    <a href="wholesale.html">Wholesale</a>
+                  </div>
+              </div>
+              <a href="product.html">Products</a>
+              <a href="contact.html">Contact us</a>
+          </nav>
+         <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+         </div>
         </div>
-      </header>
+      </div>
+
+      <div class="right-header">
+        <div class="right-sec">
+          <p>UK: 07951816502 | E-mail: info@peerlessstores.co.uk</p>
+        </div>
+        <div>
+          <img src="images/Company Logo-Photoroom.png" alt="Brand Logo" class="logo">
+        </div>
+      </div>
+    </header>
+    <h1>WHOLESALE</h1>
+  </div>
+     
   
   <div class="container">
     <div class="image">
-      <img src="95ae09c2-4450-4f4f-ab36-1805e8f2583d.png" alt="base-img" class="base-img show-image">
+      <img src="images/95ae09c2-4450-4f4f-ab36-1805e8f2583d.png" alt="base-img" class="base-img show-image">
     </div>
 
     <div class="content">
@@ -67,5 +71,16 @@
       <p><b>African Flours, Beans and Rice:</b> Pounded Yam, Ghana Gari, Ijebu Gari, Honey Beans, Golden sella Basmati Rice, Easy Cook Long Grain Rice</p>
     </div>
   </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Peerless-Stores Website.</p>
+    </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('show');
+    }
+  </script>
 </body>
 </html>

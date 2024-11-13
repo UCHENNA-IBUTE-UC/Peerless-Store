@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header-1 {
+    background: url(../images/front-view-vegetable.jpg);
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+  } 
+  
+  .banner {
+    position: absolute;
+    bottom: 5rem;
+    right: 5rem;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex-wrap: wrap;
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Show-message class activates the fade-in */
+  .show-message {
+    opacity: 1;
+    visibility: visible;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  /* Define the fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  .banner h1 {
+    font-size: 4rem;
+    font-family: "Great Vibes", cursive;
+    text-shadow: 1rem 1rem 3rem rgba(2, 0, 0, 0.5);
+    color: aliceblue;
+  }
+  
+  .section-1 {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding-bottom: 7rem;
+   
+  }
+  
+  .brand-logo {
+    width: 17rem;
+    height: 19rem;
+    background-position: center;
+    object-fit: contain;
+    z-index: 1;
+    margin-top: -5rem;
+   
+    overflow: hidden;
+    animation: slideIn 3s ease-out forwards; /* 3 seconds, easing out */
+  
+    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%); /* Start off-screen to the left */
+    }
+    to {
+      transform: translateX(0); /* End at the final position */
+    }
+  }
+  
+  .content {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 1.8rem;
+    text-align: justify;
+    
+  }
+  
+  .content h1 {
+    font-size: 2.7rem;
+  }
+  
+  button {
+    width: 7rem;
+    padding: 0.5rem;
+    background-color: #7a4202;
+    color: white;
+    border: none;
+    border-radius: 0.2rem;
+  }
+  
+  
+  button:hover {
+    background-color:  #a55608;
+    cursor: pointer;
+  }
+
+  .footer-button a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .section-2 {
+    background-color:#ece9e3;
+    padding-bottom: 3rem;
+    text-align: center;
+  }
+  
+  .section-2 header h1 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .section-2 img {
+    width: 10rem;
+    height: 10rem;
+    background-size: cover;
+    
+  }
+  
+  .offers {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 2rem;
+  
+    opacity: 0;
+    transform: translateY(30px); 
+    animation: fadeInUp 1s forwards;
+  }
+  
+  .offer-card {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15rem;
+    height: 25rem;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: space-between;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+  }
+  
+  .box:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .box:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .box:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .box:nth-child(4) {
+    animation-delay: 0.8s;
+  }
+  
+  .offer-card:hover {
+    transform: translateY(-0.8rem);
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15);
+    background-color: #fdfdfdd7;
+  }
+   .offers a {
+    text-decoration: none;
+    color: black;
+   }
+  
+   .offer-card h1 {
+    font-size: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .offer-card p, .offer-card ul {
+    font-size: 1rem;
+  }
+  
+  .offer-card ul {
+    list-style-type: none;
+  }
+  
+  
+   @media (max-width: 80rem) { 
+  
+    .banner h1 {
+      font-size: 3rem;
+    }
+  
+    .section-1 {
+      padding-bottom: 5rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+  
+    .brand-logo {
+      width: 14rem;
+      height: 16rem;
+     
+    }
+  
+    .content h1 {
+      font-size: 2.2rem;
+    }
+  
+    .offer-card h1 {
+      font-size: 2rem;
+    }
+    .offer-card {
+      width: 13rem;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+  
+    .offer-card img {
+      width: 8rem;
+      height: 8rem;
+    }
+  }
+  
+  @media (max-width: 50rem) {
+    .header-1 {
+      height: 80vh;
+    }
+    .section-1 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+  
+    .brand-logo {
+      width: 17rem;
+      height: 19rem;
+      margin-top: 3rem;
+    }
+  
+    .content {
+      padding-top: 2rem;
+    }
+  
+  
+    
+  }
+  
+  @media (max-width: 30rem) {
+    .banner {
+      text-align: center;
+      padding-left: 2rem;
+    }
+  
+    .banner h1 {
+      font-size: 2rem;
+    }
+    .banner p {
+      font-size: 0.8rem;
+    }
+  
+    .section-1 {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  
+    .brand-logo {
+      width: 12rem;
+      height: 14rem;
+    }
+    .section-2 header p {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    .section-2 header h1 {
+      padding-bottom: 1rem;
+      font-size: 2rem;
+    }
+  
+    .offers {
+      padding: 2rem;
+    }
+  
+  }

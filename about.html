@@ -3,42 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
-    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/header.css">
     <title>About Us - Peerless Stores</title>
 </head>
 <body>
-    <header>
-        <div class="head">
-            <header class="fixed-header heading">
+    <div class="head">
+        <header class="fixed-header heading">
+            <div class="left-header">
                 <div class="container">
                     <nav class="nav-links">
-                        <a href="/Home/home.html">Home</a>
-                        <a href="/About/about.html">About us</a>
+                        <a href="home.html">Home</a>
+                        <a href="about.html">About us</a>
                         <div class="dropdown">
                             <a href="#services" class="dropdown-toggle">Services</a>
                             <div class="dropdown-menu">
-                              <a href="/Service/distribution.html">Distribution</a>
-                              <a href="/Service/wholesale.html">Wholesale</a>
+                              <a href="distribution.html">Distribution</a>
+                              <a href="wholesale.html">Wholesale</a>
                             </div>
                         </div>
-                        <a href="/Product/product.html">Products</a>
-                        <a href="/Contact/contact.html">Contact us</a>
+                        <a href="product.html">Products</a>
+                        <a href="contact.html">Contact us</a>
                       </nav>
                 </div>
                 <div class="hamburger" onclick="toggleMenu()">
                     &#9776;
                 </div>
+            </div>
+            
+            <div class="right-header">
                 <div class="right-sec">
                     <p>UK: 07951816502 | E-mail: info@peerlessstores.co.uk</p>
                 </div>
-                <div class="logo">
-                    <img src="/Logo.png" alt="Brand Logo">
+                <div>
+                    <img src="images/Company Logo-Photoroom.png" alt="Brand Logo" class="logo">
                 </div>
-              </header>
-            <h1 class="about">About Peerless Stores</h1>
-        </div>
-    </header>
+            </div>
+        </header>
+        <h1 class="about">About Peerless Stores</h1>
+    </div>
+   
     <section class="about-section">
         <div class="introduction">
             <p>At Peerless Stores, we are committed to reconnecting people with the tastes of home by providing access to native foods from around the world. From the shores of Africa to the Caribbean and Asia, our mission is to serve communities in the United Kingdom with authentic ingredients that bring families and friends together, bridging cultures and traditions. </p>
@@ -66,13 +70,13 @@
 
         <div class="article">
             <div class="image">
-                <img src="apples.jpg" alt="product and services">
+                <img src="images/apples.jpg" alt="product and services">
             </div>
             <div class="text">
                 <div class="products-services">
                     <h2>Our Products and Services</h2>
                     <p>We specialize in selling and distributing ethnic foods and products. Our offerings include both online and in-store purchases. Online orders are available with next-day UK delivery, following standard terms and conditions. We continuously expand our range of quality foods and drinks, sold at very competitive prices to reach a broader market.</p>
-                    <p>Our specialties include fresh exotic native foods and drinks, such as groceries, grains, flours, fruits and vegetables, exotic frozen seafood, poultry, and meat. Please visit our <a href="../Product/product.html">Products Page</a> for more details.</p>
+                    <p>Our specialties include fresh exotic native foods and drinks, such as groceries, grains, flours, fruits and vegetables, exotic frozen seafood, poultry, and meat. Please visit our <a href="product.html">Products Page</a> for more details.</p>
                 </div>
             </div>
         </div>
