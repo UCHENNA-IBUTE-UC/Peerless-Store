@@ -71,11 +71,9 @@
     object-fit: contain;
     z-index: 1;
     margin-top: -5rem;
-   
     overflow: hidden;
     animation: slideIn 3s ease-out forwards; /* 3 seconds, easing out */
-  
-    box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0.2rem .3rem .3rem rgba(0, 0, 0, 0.178);
   }
   
   
@@ -128,9 +126,9 @@
     text-align: center;
   }
   
-  .section-2 header h1 {
+  .service h1 {
     font-size: 2.5rem;
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
   }
   
@@ -150,7 +148,6 @@
     justify-content: center;
     box-sizing: border-box;
     gap: 2rem;
-  
     opacity: 0;
     transform: translateY(30px); 
     animation: fadeInUp 1s forwards;
@@ -160,7 +157,7 @@
     padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     background-color: white;
-    box-shadow: 0 0.5rem 0.8rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.301);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +197,7 @@
   
   .offer-card:hover {
     transform: translateY(-0.8rem);
-    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 .5rem .8rem rgba(0, 0, 0, 0.15);
     background-color: #fdfdfdd7;
   }
    .offers a {

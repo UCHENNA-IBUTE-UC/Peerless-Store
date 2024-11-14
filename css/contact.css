@@ -78,15 +78,16 @@ article {
     margin-bottom: 10px;
 }
 
-.map img{
-    width: 100vw;
-    height: auto;
+iframe {
+    width: 80vw;
+    height: 500px;
     padding-left: 2rem;
     padding-right: 2rem;
+    filter: invert(100%);
 }
 
 .form-container {
-    width: 90vw;
+    width: 70vw;
 }
 
 @media (min-width: 768px) {

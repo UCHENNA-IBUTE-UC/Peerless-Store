@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
+
 header {
   color: white;
 }
@@ -27,15 +31,20 @@ footer {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   z-index: 1000;
   font-size: 0.9rem;
-  padding-left: 2rem;
+  padding-left: 5rem;
   padding-right: 2rem;
   box-sizing: border-box;
 }
 
-
+.left-header {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
 
 .logo {
-   width: 5rem;
+   width: 4rem;
+   padding: 1rem 0;
 }
 
 
