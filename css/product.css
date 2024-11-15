@@ -131,9 +131,9 @@ ol {
 }
 
 .hiddenSection {
-    width: 100%;       
-    max-width: 700px;  
+    width: 80%;
     display: none;
+    margin-bottom: 2rem;
 }
 
 .hidden-paragraph {

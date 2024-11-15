@@ -79,7 +79,7 @@ article {
 }
 
 iframe {
-    width: 80vw;
+    width: 100vw;
     height: 500px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -175,6 +175,13 @@ input {
     cursor: not-allowed;
 }
 
+@media (max-width: 480px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    
+}
 
 
 
